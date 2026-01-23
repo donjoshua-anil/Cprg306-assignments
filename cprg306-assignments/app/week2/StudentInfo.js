@@ -1,14 +1,14 @@
-import link from "next/link";
+ 
 
 export default function StudentInfo(){
     return(
         <section>
             <h2>
-                Don JOshua ANil
+                Name: Don Joshua Anil
             </h2>
             <p>
-                <link>
-                </link>
+                Github: <a href= "https://github.com/donjoshua-anil/Cprg306-assignments" >https://github.com/donjoshua-anil/Cprg306-assignments
+                </a>
             </p>
         </section>
     );
