@@ -7,6 +7,7 @@ export default function Home() {
         CPRG 306:Web Development 2 - Assignments
       </h1> Go to-
       <Link href= "/week2"> week-2 </Link>
+      <Link href= "/week3">week-3</Link>
       <p>By Don Joshua Anil</p>
     </main>
   );
