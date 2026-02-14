@@ -1,4 +1,4 @@
-
+"use client";
 
 import { useState } from "react";
 export default function NewItem(){
@@ -34,7 +34,7 @@ export default function NewItem(){
 
       {/* Name Field */}
     <div className="mb-4">
-        <label htmlFor="name" className="block text-gray-700 mb-2 font-medium">
+        <label htmlFor="name" className="block bold text-black mb-2 font-medium">
           Item Name
         </label>
         <input
@@ -44,7 +44,7 @@ export default function NewItem(){
           onChange={(e) => setName(e.target.value)}
           required
           placeholder="Enter item name"
-          className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-3 rounded-md text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -62,7 +62,7 @@ export default function NewItem(){
             max="99"
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
-            className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 rounded-md text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function NewItem(){
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 rounded-md border text-black border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="produce">Produce</option>
             <option value="dairy">Dairy</option>
