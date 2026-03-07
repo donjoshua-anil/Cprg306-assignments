@@ -27,15 +27,13 @@ export default function NewItem({onAddItem}){
     return (
     <form
     onSubmit={handleSubmit}
-    className="max-w-md w-full bg-white p-6 rounded-lg shadow-lg"
+     className="bg-white rounded-2xl p-8 w-full shadow-xl"
     >
-    <h2 className="text-2xl font-bold text-gray-800 mb-6">
-        Add New Item
-    </h2>
+     <h2 className="text-2xl font-bold text-slate-800 mb-6">Add New Item</h2>
 
       {/* Name Field */}
-    <div className="mb-4">
-        <label htmlFor="name" className="block bold text-black mb-2 font-medium">
+    <div className="mb-5">
+        <label htmlFor="name" className="block bold text-black-600 mb-1 font-medium">
           Item Name
         </label>
         <input
@@ -45,7 +43,8 @@ export default function NewItem({onAddItem}){
           onChange={(e) => setName(e.target.value)}
           required
           placeholder="Enter item name"
-          className="w-full p-3 rounded-md text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-slate-300 rounded-lg px-4 py-3 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        
         />
       </div>
 
