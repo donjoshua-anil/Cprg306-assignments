@@ -1,3 +1,4 @@
+"use client";
 import {useState} from "react";
 import Item from './item';
 
@@ -21,7 +22,7 @@ export default function ItemList({items}){
                 className={sortBy === "category" ? "bg-blue-700 text-white" : "bg-blue-500"}>
                 Sort by Category
             </button>
-
+            <ul>
             {sortedItems.map((item)=>(
                 <Item
                     key={item.id}
@@ -35,7 +36,7 @@ export default function ItemList({items}){
             
                     
             
-            
+           </ul> 
         </div>
     );
         
