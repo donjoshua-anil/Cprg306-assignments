@@ -1,6 +1,7 @@
-export default function Item({ name, quantity, category }) {
+export default function Item({ name, quantity, category, onSelect }) {
   return (
-    <li className="flex items-center justify-betweenborder bg-black border-slate rounded-xl px-5 py-4 ">
+    <li onClick={onSelect} 
+    className="flex items-center justify-betweenborder bg-black border-slate rounded-xl px-5 py-4 ">
       <div>
         <p className="text-lg font-semibold text-white capitalize">{name}</p>
         <p className="text-sm text-white capitalize">{category}</p>
